@@ -60,23 +60,31 @@ dankMemes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 newMemeBack {
- background-image: url('newMemeBack');
- position: relative;
- size: 25%;
+ max-width: 100%;
 }
 newMemeTopText {
-    position: absolute;
     margin-top: 5px;
     font-size: 10px;
-    font-family: monospace;
-}
+    position: relative;
+    padding-bottom: 75%;
+    }
 newMemeBottomText {
-    position: absolute;
     margin-bottom: 5px;
     font-size: 10px;
-    font-family: monospace;
+    position: relative;
+    padding-top: 75%;
 }
-
+newMeme {
+    height:300px;
+    max-width: 200px;
+    align-items: center;
+    position: absolute;
+    background-image: url('newMemeBack');
+    font-family: monospace;
+    padding: 25%;
+ }
 

@@ -6,32 +6,24 @@ document.getElementById("memeGenerator").addEventListener('submit', function(e) 
     const bottomText = document.getElementById("bottomText").value;
 
     const newMeme = document.createElement('div');
+    newMeme.id = "newMeme";
     newMeme.classList.add('newMeme');
     
     const newMemeBack = document.createElement('img');
-    newMemeBack.image.src = imageUrl;
+    newMemeBack.src = imageUrl;
     newMemeBack.id ="newMemeBack"
     const newMemeTopText = document.createElement("h2");
     newMemeTopText.innerText = topText;
     const newMemeBottomText = document.createElement("h2");
     newMemeBottomText.innerText = bottomText;  
+   
     
-    dankMemes.appendChild(newMemeTopText);
-    dankMemes.appendChild(newMemeBottomText);
-    dankMemes.appendChild(newMemeBack);
+    newMeme.appendChild(newMemeTopText);
+    newMeme.appendChild(newMemeBottomText);
+    newMeme.appendChild(newMemeBack);
     
-    const removeButton = document.createElement('button');
-    removeButton.type = 'submit';
-    removeButton.innerHTML = 'Remove';
-    removeButton.id = "removeButton";
-     
-     dankMemes.appendChild('removeButton');
-    document.getElementById('Memes').appendChild(dankMemes);
+    document.getElementById('Memes').appendChild(newMeme);
     memeGenerator.reset();
 
       
            });
-
-          document.getElementById('dankMemes').addEventListener('submit', function(e){
-            e.target.parentNode.remove();
-          });
