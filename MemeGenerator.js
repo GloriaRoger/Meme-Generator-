@@ -6,18 +6,18 @@ document.getElementById("memeGenerator").addEventListener('submit', function(e) 
     const bottomText = document.getElementById("bottomText").value;
 
     const newMeme = document.createElement('div');
-    newMeme.id = "newMeme";
+    newMeme.className = "newMeme";
     newMeme.classList.add('newMeme');
         
     const newMemeBack = document.createElement('img');
     newMemeBack.src = imageUrl;
-    newMemeBack.className ="newMemeBack"
-    const newMemeTopText = document.createElement("h2");
-    newMemeTopText.className ="topText"
+    newMemeBack.className ="newMemeBack";
+    const newMemeTopText = document.createElement("p");
+    newMemeTopText.className ="topText";
     newMemeTopText.innerText = topText;
-    const newMemeBottomText = document.createElement("h2");
+    const newMemeBottomText = document.createElement("P");
     newMemeBottomText.innerText = bottomText;  
-    newMemeBottomText.className ="bottomText"
+    newMemeBottomText.className ="bottomText";
     
     newMeme.appendChild(newMemeTopText);
     newMeme.appendChild(newMemeBottomText);
