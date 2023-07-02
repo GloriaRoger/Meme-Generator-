@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Meme Generator.css" />
+    <title>Meme Generator</title>
+</head>
+    <h1> YOU HAVE ENTERED THE MEME PORTAL!</h1>
+<body>
+    <h2> WHERE YOU CAN GENERATE YOUR DANKEST MEMES </h2>
+    <h3>
+        <span id="word">USE</span>
+        <span id="word">AT</span>
+        <span id="word">YOUR</span>
+        <span id="word">OWN</span>
+        <span id="word">RISK</span>
+    </h3>
+                <form id="memeGenerator"> 
+                
+                <label for="imageUrl"> Step 1:</label>
+                 <input type="url"  id="imageUrl" placeholder="Paste Image URL"> <br>
+                 <label for="topText"> Step 2:</label>
+                 <input type="text" id="topText" placeholder="Enter Top Text"> <br>
+                 <label for="bottomText"> Step 3:</label>
+                 <input type="text" id="bottomText" placeholder="Enter Bottom Text">
+       
+                <Button id="submit" type=" "submit> GENERATE </Button>
+            
+            </form>
+            <br>          
+        
+   <h3>Your Dank Memes</h3>
+   <div id="Memes"class="Memes"> </div>
+    <script src="MemeGenerator.js"></script>
+</body>
+</html>
