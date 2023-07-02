@@ -61,29 +61,26 @@ dankMemes {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items:normal;
 }
-newMemeBack {
+.newMemeBack {
  max-width: 100%;
 }
-newMemeTopText {
-    margin-top: 5px;
+.topText {
+    margin-top: 0;
+    left: 30%;
     font-size: 10px;
-    position: relative;
-    padding-bottom: 75%;
+    position: absolute;
     }
-newMemeBottomText {
-    margin-bottom: 5px;
+.bottomText {
+    bottom: 0;
+    right: 30%;
     font-size: 10px;
-    position: relative;
-    padding-top: 75%;
+    position: absolute;
 }
 newMeme {
-    height:300px;
-    max-width: 200px;
-    align-items: center;
-    position: absolute;
-    background-image: url('newMemeBack');
+    display:flexbox;
+    position: relative;
     font-family: monospace;
     padding: 25%;
  }
