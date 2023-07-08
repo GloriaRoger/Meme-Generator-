@@ -62,26 +62,48 @@ label {
     margin-top: 30px;
     margin-left: 25px;
 }
-
-/* .newMeme .newMemeBack {
- z-index: 1;
- max-width: 100%;
- max-height: 100%;
-} */
+.Memes {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.newMeme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 3%;
+    height: 500px;
+    width: 500px;
+    
+     } 
+ .newMemeBack {
+    position: absolute; 
+    margin: 0, auto;
+    z-index: 1;
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(10, 10, 10);
+ }
  .topText {
-    margin-top: 0;
+    margin-top: 5px;
+    margin-bottom: 465px;
     font-size: 30px;
     position: absolute;
     font-style:bold;
     font-family: sans-serif;
+    z-index: 2;
+
     }
  .bottomText {
-    margin-bottom: 0;
+    margin-bottom: 5px;
+    margin-top: 465px;
     font-size: 30px;
     position: absolute;
     font-style:bold;
     font-family: sans-serif;
+    z-index: 2;
     }
-.newMeme {
-    position: relative;
- }
