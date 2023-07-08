@@ -21,9 +21,15 @@ document.getElementById("memeGenerator").addEventListener('submit', function(e) 
     newMeme.appendChild(newMemeBottomText);
     newMeme.appendChild(newMemeTopText);
     newMeme.appendChild(newMemeBack);
+
+    const removeButton = document.createElement('button');
+    removeButton.className ="removeButton";
+    removeButton.addEventListener('click', function(e) {
+        e.defaultPrevented
+
+    }
     
     document.getElementById('Memes').appendChild(newMeme);
     memeGenerator.reset();
 
-      
-           });
+          });
