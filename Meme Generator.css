@@ -1,63 +1,116 @@
 h1 {
     text-align: center;
-    font-family: 'Lucida Sans';
-    font-size: 50px;
-    margin: 15px, auto;
+    font-family: 'Gadugi';
+    font-size: 55px;
+    margin-top: 80px;
     text-transform: uppercase ;
+    color: rgb(188, 53, 89) ; 
+    text-decoration-style: wavy;
+    border-style: double;
+    border-width: 10px; 
+    border-radius: 10px;
+    border-color: black;
+    width: 1020px;  
+    margin-left:  225px;
 }
-
 h2 {
     text-align: center;
     font-family: 'Lucida Sans';
     font-weight: bold;
-    font-size: 40px;
-    margin-top: 50px;
-    text-decoration: wavy;
-     
-}
+    font-size: 30px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-decoration: underline;
+    }
 
-h3 {
+#subhead {
+    text-align: center;
+    font-family: 'Gadugi';
+    text-transform: uppercase ;
+    font-size: 20px;
+    padding-top: 75px;
+    font-weight: bold;
+}
+#dankHeading {
+    font-size: 40px;
+    display:none;
+    text-decoration: underline;
     text-align: center;
     font-family: 'Lucida Sans';
-    margin-top: 50px;
     text-transform: uppercase ;
-    font-size: 15px;
-
+    font-weight: bold;
 }
-
 form {
     margin: 25px auto;
     width: 500px;
+    height:500px;
     font-family: sans-serif;
     font-weight: bold;
     position: relative;
     display: block;
-    border-radius: 5px;
-    background-color: rgb(48, 115, 78);
-    
+    border-radius: 50%;
+    background-color: rgb(188, 53, 89);
+    border-width: 5px;
+    border-style: solid;
+       }
+label {
+    margin-left: 25px;
 }
-
+#inputs {
+    padding-top: 25px;
+    padding-left:25px;
+    padding-left: 25px;
+    }
+#submit {
+    margin-top: 40px;
+    margin-left: 185px;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 2px;
+}
 input {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     box-sizing: border-box ;
     width: 60%;
     background-color: rgb(208, 204, 200);
-    margin-left: 25px;
-        
+    margin-left: 25px;  
+    border-radius: 20px;          
+    }
+    input, ::placeholder {
+        padding-left: 10%;
+    }
+    #topText, ::placeholder {
+        padding-left: 12%;
     }
 
 body {
-    font-family: monospace;
-  
-}
-
-button{
+        border-style: solid dashed;
+        border-width: 8px;
+        border-radius: 10px;
+        font-family: monospace; 
+        background: linear-gradient(-45deg, #7452d3, #791072, #492788, #220475);
+        background-size: 400% 400%;
+        height: 100%;
+        animation: gradient 4s ease infinite;       
+      }
+      @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 50% 0%;
+        }
+    }
+  button{
     margin-top: 25px, ;
     margin-left: 200px;
     margin-bottom: 10px;
     width: 100px;
-}
+    }
 label {
     margin-top: 30px;
     margin-left: 25px;
@@ -87,12 +140,12 @@ label {
     width: 500px;
     border-radius: 20px;
     border-style: solid;
-    border-width: 5px;
+    border-width: 10px;
     border-color: rgb(10, 10, 10);
  }
  .topText {
-    margin-top: 5px;
-    margin-bottom: 465px;
+    margin-top: 10px;
+    margin-bottom: 460px;
     font-size: 30px;
     position: absolute;
     font-weight:bold;
@@ -101,8 +154,8 @@ label {
 
     }
  .bottomText {
-    margin-bottom: 5px;
-    margin-top: 465px;
+    margin-bottom: 10px;
+    margin-top: 460px;
     font-size: 30px;
     position: absolute;
     font-weight:bold;
@@ -110,12 +163,16 @@ label {
     z-index: 2;
     }
 .removeButton {
-    margin-bottom: -55px;
-    margin-top: 520px;
+    margin-bottom: 5px;
+    margin-top: 560px;
     margin-right: 200px;
-    font-size: 30px;
+    font-size: 20px;
     position: absolute;
     font-family: sans-serif;
     font-weight:bold;
-    width: fit-content;    
+    width: fit-content; 
+    background-color: rgb(219, 57, 57);
+    border-radius: 20px;
+    border-color: black;
+    text-transform: uppercase;
     }

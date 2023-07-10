@@ -1,5 +1,6 @@
 document.getElementById("memeGenerator").addEventListener('submit', function(e) {
         e.preventDefault();
+
 // creating Variables from the Meme Generator Form input values by grabbing them using 'getElementbyId' 
     const imageUrl = document.getElementById("imageUrl").value;
     const topText = document.getElementById("topText").value;
@@ -37,6 +38,7 @@ document.getElementById("memeGenerator").addEventListener('submit', function(e) 
 
     //append the "newMeme" div to the established "memes" div in the body to view the NewMeme in the body
     document.getElementById('Memes').appendChild(newMeme);
+    document.getElementById("dankHeading").style.display="block";
     memeGenerator.reset();
 
 

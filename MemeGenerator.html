@@ -5,35 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Meme Generator.css" />
     <title>Meme Generator</title>
+    <
 </head>
-    <h1> YOU HAVE ENTERED THE MEME PORTAL!</h1>
 <body>
+    <h1> YOU HAVE ENTERED THE MEME PORTAL!</h1>
     <h2> WHERE YOU CAN GENERATE YOUR DANKEST MEMES </h2>
-    <h3>
+    <form id="memeGenerator">
+    
+    <h3 id="subhead">
         <span id="word">USE</span>
         <span id="word">AT</span>
         <span id="word">YOUR</span>
         <span id="word">OWN</span>
         <span class="word">RISK</span>
-    </h3>
-                <form id="memeGenerator"> 
-                
+    </h3> 
+    <!-- Meme Generator Form -->
+                 
+                <div id="inputs">
                 <label for="imageUrl"> Step 1:</label>
-                 <input type="url"  id="imageUrl" placeholder="Paste Image URL"> <br>
+                 <input type="url"  id="imageUrl" placeholder="Paste Image URL" required> <br>
                  <label for="topText"> Step 2:</label>
-                 <input type="text" id="topText" placeholder="Enter Top Text"> <br>
+                 <input type="text" id="topText" placeholder="Enter Top Text" required> <br>
                  <label for="bottomText"> Step 3:</label>
-                 <input type="text" id="bottomText" placeholder="Enter Bottom Text">
-       
+                 <input type="text" id="bottomText" placeholder="Enter Bottom Text" required>
+            <!-- submit button -->
                 <Button id="submit" type=" "submit> GENERATE </Button>
+                </div>
             
             </form>
-          
-        
-   <h3>Your Dank Memes</h3>
-   <div id="Memes" class="Memes"> 
-       </div>
-    <!-- <canvas> <div class="topText" type="text" > </div> </canvas> </div> -->
+                 <!-- Meme Container -->
+   <h3 id="dankHeading">Your Dank Memes</h3>
+   <div id="Memes" class="Memes"> </div>
     <script src="MemeGenerator.js"></script>
 </body>
 </html>
